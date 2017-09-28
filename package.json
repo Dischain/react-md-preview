@@ -1,0 +1,26 @@
+{
+  "name": "react-md-preview",
+  "version": "1.0.0",
+  "description": "markdown preview app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dischain/react-md-preview.git"
+  },
+  "keywords": [
+    "markdown",
+    "react",
+    "redux",
+    "react-remarkable",
+    "bootstrap"
+  ],
+  "author": "dischain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dischain/react-md-preview/issues"
+  },
+  "homepage": "https://github.com/Dischain/react-md-preview#readme"
+}
