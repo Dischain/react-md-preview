@@ -6,11 +6,11 @@ const babelify = require('babelify');
 const source = require('vinyl-source-stream');
 
 gulp.task('build', function() {
-  return browserify('./client/app.jsx')
+  return browserify('./app.jsx')
   .transform(babelify, {presets: ['react', 'es2015']})
   .bundle()
   .pipe(source('bundle.js'))
-  .pipe(gulp.dest('./client/public'));
+  .pipe(gulp.dest('./public'));
 });
 
 gulp.task('watch', ['build'], function () {
