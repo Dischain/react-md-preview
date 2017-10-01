@@ -1,3 +1,96 @@
-textarea.form-control {
+html, body {
   height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #7a7676;
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.container {
+  width: auto;
+}
+
+.full-height {
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.nav__item {
+  float: left;
+}
+
+.nav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.panel {
+  margin: 10px 20px;
+  /* height: 85%; */
+}
+
+.editor {
+  display: inline-block;
+  width: 465px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  vertical-align: top;
+}
+
+textarea {
+  user-select: text;
+  flex-direction: column;
+  cursor: auto;
+  white-space: pre-wrap;
+  outline: none;
+  width: 100%;
+  min-height: 400px; 
+  box-sizing: border-box;  
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+textarea.form-control {
+  overflow: hidden;
+  word-wrap: break-word;
+  resize: none;
+  border: none;
+}
+
+.preview {
+  display: inline-block;
+  margin-left: 20px;
+  width: 465px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  vertical-align: top;
+}
+
+#app {
+  height: 100%;
+}
+
+textarea.form-control {
+  height: 100% !important;
 }

@@ -7,10 +7,9 @@ import { sourceChange } from '../actions/source.js';
 class Editor extends Component {
   render() {
     return (
-      <div className={'col-md-6'}>
-        <div className='form-group'>
-          <textarea className='form-control' onChange={this.props.sourceChange} value={this.props.source}>
-          </textarea>
+      <div className={'editor'}>
+        <div className={'content'}>
+          <textarea className={'form-control'} onChange={this.props.sourceChange} value={this.props.source}></textarea>
         </div>
       </div>
     );

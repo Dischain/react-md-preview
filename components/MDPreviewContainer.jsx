@@ -13,14 +13,12 @@ const store = configureStore({ source: '' });
 export default class MDPreviewContainer extends Component {
   render() {
     return (
-      <div className={'row'}>
-        <Provider store={store}>
-          <div>
-          <Editor />
-          <Preview />
-          </div>
-        </Provider>
-      </div>
+      <Provider store={store}>
+        <div className={'panel clearfix'}>
+        <Editor />
+        <Preview />
+        </div>
+      </Provider>
     );
   }
 }

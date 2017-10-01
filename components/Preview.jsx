@@ -7,7 +7,7 @@ import Markdown  from 'react-remarkable';
 class Preview extends Component {
     render() {
       return (
-        <div className={'col-md-6'}>
+        <div className={'preview'}>
           <Markdown source={this.props.source} />
         </div>
       );
