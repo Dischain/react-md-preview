@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 
 const Navbar = () => (
-  <div className={'container'}>
+  <div className={''}>
     <ul className={'nav'}>
       <li className={'nav__item'}>
         <a href='#'>MD Preview</a>

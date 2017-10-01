@@ -8,7 +8,9 @@ class Preview extends Component {
     render() {
       return (
         <div className={'preview'}>
-          <Markdown source={this.props.source} />
+          <div className={'wrapper'}>
+            <Markdown source={this.props.source} />
+          </div>
         </div>
       );
     }

@@ -2,14 +2,23 @@
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import $ from 'jquery';
 import { sourceChange } from '../actions/source.js';
 
 class Editor extends Component {
+  componentDidMount() {
+    $('#textarea').keyup(function() {
+      while($(this).outerHeight() < this.scrollHeight + parseFloat($(this).css('borderTopWidth')) + parseFloat($(this).css('borderBottomWidth'))) {
+        $(this).height($(this).height()+1);
+      }
+    });
+  }
+  
   render() {
     return (
-      <div className={'editor'}>
-        <div className={'content'}>
-          <textarea className={'form-control'} onChange={this.props.sourceChange} value={this.props.source}></textarea>
+      <div className={'editor full-height'}>
+        <div className={'wrapper'}>
+          <textarea id='markdown' onChange={this.props.sourceChange} value={this.props.source}></textarea>
         </div>
       </div>
     );

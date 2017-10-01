@@ -9,11 +9,72 @@ html, body {
   line-height: 1.5em;
 }
 
-.container {
-  width: auto;
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.pane {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid transparent;
+
+  padding: 20px;
+  margin: 20px;
+}
+
+.editor {
+  float: left;
+  width: 45%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  vertical-align: top;
 }
 
 .full-height {
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  padding: 22px 0 20px 10px;
+}
+
+.preview {
+  float: left;
+  margin-left: 20px;
+  width: 45%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  vertical-align: top;
+  padding: 10px;
+}
+
+textarea {
+  user-select: text;
+  flex-direction: column;
+  cursor: auto;
+  white-space: pre-wrap;
+  outline: none;
+  width: 100%;
+  min-height: 400px; 
+  box-sizing: border-box;  
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#markdown {
+  display: block;
+  resize: none;
+  border: 0;
+  tab-size: 4;
+  color: #111;
+  background-color: transparent;
+}
+
+#app {
   height: 100%;
 }
 
@@ -42,55 +103,4 @@ li a:hover {
 .nav {
   overflow: hidden;
   background-color: #333;
-}
-
-.panel {
-  margin: 10px 20px;
-  /* height: 85%; */
-}
-
-.editor {
-  display: inline-block;
-  width: 465px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  vertical-align: top;
-}
-
-textarea {
-  user-select: text;
-  flex-direction: column;
-  cursor: auto;
-  white-space: pre-wrap;
-  outline: none;
-  width: 100%;
-  min-height: 400px; 
-  box-sizing: border-box;  
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-}
-
-textarea.form-control {
-  overflow: hidden;
-  word-wrap: break-word;
-  resize: none;
-  border: none;
-}
-
-.preview {
-  display: inline-block;
-  margin-left: 20px;
-  width: 465px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  vertical-align: top;
-}
-
-#app {
-  height: 100%;
-}
-
-textarea.form-control {
-  height: 100% !important;
 }

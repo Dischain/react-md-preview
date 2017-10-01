@@ -14,7 +14,7 @@ export default class MDPreviewContainer extends Component {
   render() {
     return (
       <Provider store={store}>
-        <div className={'panel clearfix'}>
+        <div className={'pane clearfix'}>
         <Editor />
         <Preview />
         </div>
